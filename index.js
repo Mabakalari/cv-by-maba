@@ -1,3 +1,7 @@
+const { Client, Intents, MessageEmbed ,MessageActionRow ,MessageSelectMenu, Permissions } = require("discord.js");
+const client = new Client({
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]
+});
 client.on("messageCreate", message => {
 if(message.content.startsWith(prefix + "cv")) {
 let messageArray = message.content.split(" ")
