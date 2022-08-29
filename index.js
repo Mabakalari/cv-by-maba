@@ -29,7 +29,7 @@ programing = collected.first().content
   .addField("Tag", `<@${message.author.id}>`)
   .setFooter(`${message.guild.name}`)
   .setColor("RANDOM")
- clientuserscacheget("")message.channel.send({embeds:[embed]})
+message.channel.send({embeds:[embed]})
 m.react("✅")
   });
 })
