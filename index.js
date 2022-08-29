@@ -28,7 +28,7 @@ programing = collected.first().content
   .addField("Tag", `<@${message.author.id}>`)
   .setFooter(`${message.guild.name}`)
   .setColor("RANDOM")
-  client.users.cache.get("Id Xot").send({embeds: [embed]}).then(m => {
+  client.users.cache.get("Id Chanell").message.channel.send({embeds: [embed]})
 m.react("✅")
   });
 })
